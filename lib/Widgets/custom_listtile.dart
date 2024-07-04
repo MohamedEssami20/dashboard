@@ -16,13 +16,21 @@ class DarwerUserInfo extends StatelessWidget {
       elevation: 0,
       child: Center(
         child: ListTile(
-          title: Text(
-            userInfoModel.title,
-            style: AppStyle.styleSemiBold16,
+          title: FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: AlignmentDirectional.centerStart,
+            child: Text(
+              userInfoModel.title,
+              style: AppStyle.styleSemiBold16(context),
+            ),
           ),
-          subtitle: Text(
-            userInfoModel.subtitle,
-            style: AppStyle.styleRegular12,
+          subtitle: FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: AlignmentDirectional.centerStart,
+            child: Text(
+              userInfoModel.subtitle,
+              style: AppStyle.styleRegular12(context),
+            ),
           ),
           leading: SvgPicture.asset(userInfoModel.image),
         ),

@@ -5,21 +5,19 @@ import 'package:flutter/material.dart';
 class AllExpensesAndQuickInvoice extends StatelessWidget {
   const AllExpensesAndQuickInvoice({super.key});
 
-   @override
+  @override
   Widget build(BuildContext context) {
-    return const SingleChildScrollView(
-      child: Column(
-        children: [
-          SizedBox(
-            height: 40,
-          ),
-          AllExpenses(),
-          SizedBox(
-            height: 25,
-          ),
-          QuickInvoic(),
-        ],
-      ),
+    return const Column(
+      children: [
+        SizedBox(
+          height: 45,
+        ),
+        AllExpenses(),
+        SizedBox(
+          height: 25,
+        ),
+        QuickInvoic(),
+      ],
     );
   }
 }

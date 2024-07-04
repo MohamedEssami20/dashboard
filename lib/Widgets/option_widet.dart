@@ -16,9 +16,9 @@ class OptinonsWidget extends StatelessWidget {
               borderRadius: BorderRadius.circular(12))),
       child: Row(
         children: [
-         const Text(
+          Text(
             "Monthly",
-            style: AppStyle.styleMedium16,
+            style: AppStyle.styleMedium16(context),
           ),
           const SizedBox(
             width: 12,
